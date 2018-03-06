@@ -1,8 +1,8 @@
 import { h, Component } from 'preact';
-import { getStage } from '../../__mocks';
 import Layout from "../../layout";
 import Teaser from "./teaser";
-// import { getStage } from 'data-api';
+import { getStage } from '../../../data-api';
+// import { getStage } from '../../__mocks';
 
 export default class Stage extends Component {
 
