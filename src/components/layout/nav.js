@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import styles from './nav.module.css';
+import styles from './nav.module.scss';
 
 const Nav = () =>
   <nav className={styles.nav}>

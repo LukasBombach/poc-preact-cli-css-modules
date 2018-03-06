@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import styles from './teaser.module.css';
+import styles from './teaser.module.scss';
 
 export default ({ article: { id, title, teaserImg, teaserText } }) =>
   <a href={`/article/${id}`} className={styles.teaser} style={{ backgroundImage: `url(${teaserImg})` }}>

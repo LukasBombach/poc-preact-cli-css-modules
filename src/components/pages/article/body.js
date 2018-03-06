@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import appendHtml from 'appendhtml';
 import Paragraph from "./content/paragraph";
-import styles from './body.module.css';
+import styles from './body.module.scss';
 
 export default class Body extends Component {
 

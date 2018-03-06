@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
 import {rendersPlatforms} from "../../../platforms/index";
-import styles from './paragraph.module.css';
+import styles from './paragraph.module.scss';
 
 @rendersPlatforms
 export default class Paragraph extends Component {

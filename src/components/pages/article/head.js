@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
 import {rendersPlatforms} from "../../platforms/index";
-import styles from './head.module.css';
+import styles from './head.module.scss';
 
 @rendersPlatforms
 export default class Head extends Component {
