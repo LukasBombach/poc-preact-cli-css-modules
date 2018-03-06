@@ -1,35 +1,26 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
-
-import Header from './header';
-import Home from '../routes/home';
-import Profile from '../routes/profile';
-// import Home from 'async!../routes/home';
-// import Profile from 'async!../routes/profile';
+import Article from './pages/article';
+import Stage from './pages/stage';
 
 if (module.hot) {
-	require('preact/debug');
+  require('preact/debug');
 }
 
 export default class App extends Component {
-	/** Gets fired when the route changes.
-	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
-	 *	@param {string} event.url	The newly routed URL
-	 */
-	handleRoute = e => {
-		this.currentUrl = e.url;
-	};
 
-	render() {
-		return (
+  handleRoute = e => {
+    this.currentUrl = e.url;
+  };
+
+  render() {
+    return (
 			<div id="app">
-				<Header />
-				<Router onChange={this.handleRoute}>
-					<Home path="/" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
-				</Router>
+        <Router onChange={this.handleRoute}>
+          <Stage path="/" />
+          <Article path="/article/:id/:platform?" />
+        </Router>
 			</div>
-		);
-	}
+    );
+  }
 }
