@@ -8,7 +8,6 @@ import styles from './index.module.scss';
 export default class Layout extends Component {
 
   renderWeb() {
-    console.log(styles);
     return (
       <div className={styles.container}>
         <Head />

@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import styles from './head.module.scss';
-import logo from '../assets/images/layout/logo.png';
+import logo from '../../assets/images/layout/logo.png';
 
 const Head = () =>
   <header className={styles.header}>
