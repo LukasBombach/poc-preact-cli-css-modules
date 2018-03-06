@@ -1,0 +1,16 @@
+@import "../../assets/fonts/gotham/GothamHTF-BoldCondensed";
+@import "../../assets/fonts/gotham/GothamHTF-BookCondensed";
+
+.heading {
+  font: bold 100px/1em "Gotham HTF", sans-serif;
+  text-align: center;
+}
+
+.img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.teaser {
+  font: 21px/1.7em "Gotham HTF", sans-serif;
+}

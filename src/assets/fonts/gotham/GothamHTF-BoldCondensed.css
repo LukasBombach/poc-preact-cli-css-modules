@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Gotham HTF';
+    src: url('/fonts/gotham/GothamHTF-BoldCondensed.woff2') format('woff2'),
+        url('/fonts/gotham/GothamHTF-BoldCondensed.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}

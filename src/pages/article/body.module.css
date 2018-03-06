@@ -1,0 +1,5 @@
+@import "../../assets/fonts/gotham/GothamHTF-BookCondensed";
+
+.body {
+  font: 21px/1.7em "Gotham HTF", sans-serif;
+}
