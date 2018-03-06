@@ -14,12 +14,12 @@ export default class Article extends Component {
   };
 
   async componentDidMount() {
-    const article = await getArticle(this.props.match.params.id);
+    const article = await getArticle(this.props.id);
     this.setState({ article });
   }
 
   getChildContext() {
-    const platform = this.props.match.params.platform || Article.defaultPlatform;
+    const platform = this.props.platform || Article.defaultPlatform;
     return { platform };
   }
 
