@@ -2,8 +2,8 @@ import { h, Component } from 'preact';
 import Layout from "../../layout";
 import Head from './head';
 import Body from './body';
-import { getArticle } from '../../../data-api';
-// import { getArticle } from '../../__mocks';
+import { getArticle } from '../../__mocks';
+// import { getArticle } from '../../../data-api';
 
 export default class Article extends Component {
 
