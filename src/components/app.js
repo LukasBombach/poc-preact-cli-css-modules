@@ -15,12 +15,10 @@ export default class App extends Component {
 
   render() {
     return (
-      <div id="app">
-        <Router onChange={this.handleRoute}>
-          <Stage path="/"/>
-          <Article path="/article/:id/:platform?"/>
-        </Router>
-      </div>
+      <Router onChange={this.handleRoute}>
+        <Stage path="/"/>
+        <Article path="/article/:id/:platform?"/>
+      </Router>
     );
   }
 }

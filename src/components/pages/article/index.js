@@ -7,7 +7,9 @@ import { getArticle } from '../../__mocks';
 
 export default class Article extends Component {
 
-  static defaultPlatform = 'web';
+  static defaultProps = {
+    platform: 'Web',
+  };
 
   state = {
     article: {},
@@ -19,8 +21,7 @@ export default class Article extends Component {
   }
 
   getChildContext() {
-    const platform = this.props.platform || Article.defaultPlatform;
-    return { platform };
+    return { platform: this.props.platform };
   }
 
   render() {
